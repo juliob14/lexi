@@ -34,5 +34,5 @@ import java.util.ArrayList
 "<"    {tokens.add("<"); System.out.println("Menor");
 "=="   {tokens.add("=="); System.out.println("Igual");
 "%%"   {tokens.add("%%"); System.out.println("Mod");
-"_+[A-Z]" {tokens.add("_+[A-Z]"); System.out.println("ID");
-"[0-9]"  {tokens.add("[0-9]"); System.out.println("Num");  
+"[_a-zA-Z][A-Za-z]" {tokens.add("_+[A-Z]"); System.out.println("ID");
+"[0-9]+"  {tokens.add("[0-9]"); System.out.println("Num");  
