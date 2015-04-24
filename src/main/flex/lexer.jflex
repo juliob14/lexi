@@ -17,7 +17,7 @@ import java.util.ArrayList
                while(!lexer.zzAtEOF){
                      lexer.yylex();
                 }
-            }catch (Exceotion ex){
+            }catch (Exception ex){
              System.out.println("Error al analizar ");
             }finally{
              try{
@@ -26,6 +26,7 @@ import java.util.ArrayList
             System.out.println("Error al cerrar archivo ");
             }
         }
+            return tokens;
     }
 %}
 %%
